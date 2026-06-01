@@ -1,6 +1,6 @@
 {
   "name": "@gaud_erp/paperclip-github-manager",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Paperclip plugin for GitHub platform — repo sync, PR review, issue triage, CI/CD monitoring, engineering metrics, standup reports, knowledge graphs, and decision logs",
   "license": "MIT",
   "keywords": [
