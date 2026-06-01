@@ -5,6 +5,17 @@
 
 Open-source [Paperclip](https://github.com/paperclipai/paperclip) plugin that brings GitHub repository management, PR/issue sync, AI-powered code reviews, and knowledge graphs into your Paperclip instance.
 
+## Why use this plugin?
+
+- **Your agents gain eyes on the codebase** — any Paperclip agent can read repo structure, file contents, and PR diffs through registered tools, without needing local filesystem access or cloning repos
+- **Code reviews on autopilot** — open a PR and the reviewer agent analyzes the diff, posts inline comments, and submits a verdict — no manual assignment needed
+- **Issue triage in seconds** — new issues are automatically classified by type, priority, and area, with labels applied and the right people assigned
+- **CI/CD failures explained, not just reported** — when a workflow fails, the companion agent reads the logs, correlates with PR changes, and posts a root-cause analysis with fix suggestions
+- **Knowledge that accumulates** — merged PRs feed a knowledge graph of modules, dependencies, and patterns that grows smarter over time
+- **Daily standups without the meeting** — a scheduled report summarizes merged PRs, blocked reviews, and cross-repo impacts every morning
+- **Zero-latency UI** — all data is synced locally, so dashboards, PR lists, and metrics render instantly without hitting the GitHub API
+- **One plugin, full coverage** — repos, PRs, issues, CI/CD, metrics, standups, knowledge graphs, and decision logs in a single install
+
 ## Features
 
 - **3-layer sync**: webhooks (real-time) + cron every 5 min (safety net) + manual full sync
