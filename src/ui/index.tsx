@@ -19,6 +19,3 @@ export { GitHubDashboardWidget } from "./components/DashboardWidget.js";
 
 // Context menu
 export { GitHubContextMenu } from "./components/ContextMenu.js";
-
-// Issue property (inline in properties panel)
-export { GitHubLinkedPRsProperty } from "./components/LinkedPRsProperty.js";
