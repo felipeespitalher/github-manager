@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS plugin_cus_github_manager_d2300af002.gh_knowledge_nod
   metadata        TEXT DEFAULT '{}',
   first_seen_pr   INTEGER,
   last_updated_pr INTEGER,
-  created_at      TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at      TEXT NOT NULL DEFAULT (datetime('now'))
+  created_at      TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+  updated_at      TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
 CREATE INDEX IF NOT EXISTS idx_knowledge_nodes_repo

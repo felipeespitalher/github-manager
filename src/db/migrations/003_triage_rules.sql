@@ -8,8 +8,8 @@ CREATE TABLE IF NOT EXISTS plugin_cus_github_manager_d2300af002.gh_triage_rules 
   action_value    TEXT NOT NULL,
   priority        INTEGER NOT NULL DEFAULT 0,
   enabled         BOOLEAN NOT NULL DEFAULT true,
-  created_at      TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at      TEXT NOT NULL DEFAULT (datetime('now'))
+  created_at      TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+  updated_at      TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
 CREATE INDEX IF NOT EXISTS idx_triage_rules_repo

@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS plugin_cus_github_manager_d2300af002.gh_knowledge_edg
   edge_type      TEXT NOT NULL CHECK(edge_type IN ('imports', 'calls', 'extends', 'configures', 'tests', 'documents')),
   weight         INTEGER NOT NULL DEFAULT 1,
   first_seen_pr  INTEGER,
-  created_at     TEXT NOT NULL DEFAULT (datetime('now'))
+  created_at     TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
 );
 
 CREATE INDEX IF NOT EXISTS idx_knowledge_edges_repo

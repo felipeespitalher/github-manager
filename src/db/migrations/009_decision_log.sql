@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS plugin_cus_github_manager_d2300af002.gh_decision_log 
   source_number      INTEGER NOT NULL,
   source_url         TEXT,
   decided_at         TEXT,
-  created_at         TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at         TEXT NOT NULL DEFAULT (datetime('now')),
+  created_at         TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+  updated_at         TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   UNIQUE(repo_id, adr_number)
 );
 
